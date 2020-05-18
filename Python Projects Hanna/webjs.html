@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Kill Me</title>
+	<script>
+		var clicked = false;
+
+		function myFunction() { 
+			var words = document.getElementById("Suh Dude");
+			if (clicked) {
+				words.innerHTML = "Suh Dude";
+				clicked = false;
+			} else {
+				words.innerHTML = "Adios Compadre";
+				clicked = true;
+			}
+
+		}
+	</script>
+</head>
+<body>
+	<h1 id= "Suh Dude"> Suh Dude </h1>
+	<button id="btn" onclick= "myFunction()"> Click here dude</button>
+</body>
+</html>

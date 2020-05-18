@@ -1,0 +1,51 @@
+<html>
+<head>
+<title>Bouncing Picture</title>
+<!-- width 102px; and height 102 px -->
+<style>
+div.bound {display:hide; border-style:transparent;
+width:502px;height:402px; border-width:1px}
+div.move { position:absolute; }
+</style>
+
+<script >
+	var x = 5; //Starting x coord.
+	var y = 5; //Starting y coord.
+	var max_x = 1000; //maximum x coord.
+	var max_y = 350; //maximum y coord.
+	var xoffset = 10; //Move 10px every step
+	var yoffset = 10; //Move 10px every step
+	function go()
+	{
+	moveLogo()
+	}
+	function moveLogo() {
+	x = x + xoffset;
+	y = y + yoffset;
+	//Move the image to the new location
+	document.getElementById("msucs").style.top = y+'px';
+	document.getElementById("msucs").style.left = x+'px';
+	//if reach boundaries, reset offset vectors
+	if ((x+xoffset > max_x) || (x+xoffset < 0))
+	xoffset *=-1;
+	if ((y+yoffset > max_y) || (y+yoffset < 0))
+	yoffset *=-1;
+	window.setTimeout('moveLogo()', 30);
+	//call moveLogo every 100 ms
+	}
+</script>
+
+</head>
+<body onload="go()">
+<style>
+	body {
+		background: "https://66.media.tumblr.com/8fa6c3c3666978087f91228153067a90/tumblr_o8ug15Ho8T1uu9fqho1_500.gif"
+	}
+</style>
+<div class="bound">
+<div id="msucs" class="move">
+<img src="Porject_Images/danny.png" alt="need image here" />
+</div>
+</div>
+</body>
+</html>

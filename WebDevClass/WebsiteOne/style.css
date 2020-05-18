@@ -1,0 +1,42 @@
+nav{
+  display:block;
+  color:violet;
+  text-align: center;
+  font-family:"Comic Sans MS", cursive, sans-serif
+
+}
+
+head{
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+body{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: purple;
+    background-image: url("https://media.giphy.com/media/Y5sAjV4QXO2Aw/giphy.gif");
+}
+
+textarea{
+  position: relative;
+  left: 10%;
+  top: 30px;
+  color: violet;
+  background-color:purple;
+  text-align: left;
+}
+.container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+img{
+  transition: all 1s;
+}
+img:hover{
+  transform:scale(2);
+}

@@ -1,0 +1,23 @@
+body,
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-image: url("header.jpg");
+  background-size: cover; 
+}
+.words{
+	display: flex;
+	justify-content: center;
+	color: white;
+	word-wrap: wrap; 
+
+}
+.container{
+	align-content: center;
+	top: 35%;
+	font-size:40px;
+}
